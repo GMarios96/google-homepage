@@ -1,0 +1,200 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.google-logo {
+    margin-top: 11vw;
+    text-align: center;
+}
+
+.search-form {
+    margin-top: 1.5em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search-icon {
+    position: absolute;
+    left: 15px;
+    width: 20px;
+    height: 20px;
+    opacity: 0.3;
+}
+
+#google-search {
+    width: 35em;
+    font-size: 1em;
+    line-height: 2.5em;
+    border-radius: 20px;
+    border: 0.3px solid rgb(221, 221, 221);
+    text-indent: 2.5em;
+    outline: transparent;
+    box-shadow: transparent;
+    transition: box-shadow 0.4s ease-in-out;
+}
+
+#google-search:focus {
+    outline: transparent;
+}
+
+#google-search:hover{
+    box-shadow: 5px 4px 12px -4px rgba(0,0,0,0.66);
+}
+
+.google-navbar {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 15px 20px 10px 10px;
+}
+
+.google-navbar > a  {
+    margin-left: 1vw;
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.button-wrapper {
+    width: 35em;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-top: 1.7em;
+}
+
+input[type="button"] {
+    border: none;
+    background: rgba(243, 243, 243, 0.75);
+    width: 130px;
+    height: 35px;
+    font-weight: 400;
+    border-radius: 5px;
+}
+
+input[type="button"]:hover {
+    border: 1px solid rgba(200, 200, 200, 0.5);
+    cursor: pointer;
+}
+
+.google-lang {
+    align-self: center;
+    margin-top: 30px;
+    font-size: 0.75em;
+}
+
+.google-lang > a {
+    font-size: 1.15em;
+}
+
+.gsbutton {
+    margin-right: 1.2em;
+}
+
+.luckybutton {
+    margin-left: 1.2em;
+}
+
+.grid-icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 1vw;
+    margin-left: 1vw;
+}
+
+.avatar-icon {
+    border-radius: 50%;
+}
+
+.grid-link {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-link:hover {
+    background: rgba(173, 173, 173, 0.45);
+}
+
+.foobot {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.foobot > div {
+    width: 100%;
+    background: rgb(243, 243, 243);
+    padding: 1.1em;
+}
+
+.foocountry {
+    display: flex;
+    align-items: center;
+    color: rgb(116, 116, 116);
+    border-bottom: 1px solid rgba(160, 160, 160, 0.25);
+}
+
+.fooinfo {
+    color: rgb(116, 116, 116);
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+
+#infoone > li > a, #infotwo > li > a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#infoone {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#infoone > li {
+    margin-left: 0.5em;
+}
+
+#infoone > li:nth-child(n + 2) {
+    margin-left: 3em;
+}
+
+#infotwo {
+    justify-content: flex-end;
+    flex-basis: 50%;
+    display: flex;
+}
+
+#infotwo > li {
+    margin-right: 1.2em;
+}
